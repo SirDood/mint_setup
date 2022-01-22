@@ -4,7 +4,7 @@ installed-apps=['apt:bcmwl-kernel-source', 'apt:flatpak-builder', 'apt:git', 'ap
 
 [com/linuxmint/updates]
 default-repo-is-ok=true
-refresh-last-run=1642844143
+refresh-last-run=1642865556
 show-welcome-page=false
 window-height=570
 window-pane-position=344
@@ -100,6 +100,8 @@ custom-acceleration=false
 custom-threshold=false
 double-click=252
 drag-threshold=8
+locate-pointer=false
+middle-button-enabled=false
 motion-acceleration=1.0
 motion-threshold=1
 
@@ -242,7 +244,7 @@ selection-menu-open-as-root=false
 selection-menu-scripts=false
 
 [org/nemo/window-state]
-geometry='800x550+264+231'
+geometry='800x550+310+150'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
@@ -272,11 +274,12 @@ minimap-visible=false
 statusbar-visible=true
 
 [org/x/editor/state/history-entry]
-history-search-for=['pipewire', 'discord', 'background', 'aspect', 'zoom', 'calendar']
+history-replace-with=['sys_settings']
+history-search-for=['mintdesktopbackup', 'firefox', 'pipewire', 'discord', 'background', 'aspect', 'zoom', 'calendar']
 
 [org/x/editor/state/window]
 bottom-panel-size=140
 side-panel-active-page=827629879
 side-panel-size=200
-size=(719, 831)
-state=87168
+size=(719, 832)
+state=45952
