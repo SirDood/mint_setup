@@ -22,8 +22,8 @@ mv ~/Downloads/temp/mint_setup/wallpaper.jpg ~/Pictures/"Random Images"/
 printf "Loading system settings...\n"
 dconf load / < ~/Downloads/temp/mint_setup/sys_settings
 printf "Setting up applets...\n"
-mv ~/Downloads/mint_setup/13.json ~/.cinnamon/configs/calendar@cinnamon.org/
-mv ~/Downloads/mint_setup/0.json ~/.cinnamon/configs/menu@cinnamon.org/
+cp ~/Downloads/mint_setup/13.json ~/.cinnamon/configs/calendar@cinnamon.org/
+cp ~/Downloads/mint_setup/0.json ~/.cinnamon/configs/menu@cinnamon.org/
 
 # Delete test folder when done
 printf "\nDeleting temp folder...\n"
