@@ -28,5 +28,6 @@ cd ~/Downloads/temp/
 git clone https://github.com/SirDood/mint_setup.git
 
 # Setup system settings right away
+printf "\nSetting up system settings...\n"
 chmod +x ~/Downloads/temp/mint_setup/mint_setup.sh
 ~/Downloads/temp/mint_setup/mint_setup.sh

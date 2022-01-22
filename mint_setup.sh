@@ -14,7 +14,7 @@ git clone https://github.com/vinceliuice/vimix-icon-theme.git
 printf "\nInstalling WhiteSur theme...\n"
 ~/Downloads/temp/WhiteSur-gtk-theme/install.sh
 printf "\nInstalling Vimix icons...\n"
-~/Downloads/temo/vimix-icon-theme/install.sh -a
+~/Downloads/temp/vimix-icon-theme/install.sh -a
 
 # Load system settings
 printf "\nMoving wallpaper.jpg to ~/Pictures/Random Images...\n"
