@@ -20,7 +20,21 @@ systemctl --user --now enable pipewire-media-session.service
 printf "\nAudio server info\n"
 pactl info
 
-# Install pavucontrol
+# Installing pavucontrol
 printf "\nInstalling pavucontrol...\n"
-sudo apt install pavucontrol
+sudo apt install pavucontrol -y
+
+# Installing Catia
+printf "\nInstalling KXStudio repos...\n"
+sudo apt-get install apt-transport-https gpgv -y
+sudo dpkg --purge kxstudio-repos-gcc5
+cd ~/Downloads/
+wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_10.0.3_all.deb
+sudo dpkg -i ~/Downloads/kxstudio-repos_10.0.3_all.deb
+printf "\nUpdating apt...\n"
+sudo apt update
+printf "\nInstalling Catia...\n"
+sudo apt install catia
+
+printf "\nInstalled PipeWire, pavucontrol and Catia.\n"
 
