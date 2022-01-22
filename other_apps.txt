@@ -1,0 +1,7 @@
+BitWarden - sm
+EasyEffects - sm
+Catia - wget http://ppa.launchpad.net/kxstudio-debian/apps/ubuntu/pool/main/c/cadence/ catia_0.9.1_all.deb - also remember to blacklist the internal mic
+Obs - sm
+Discord - sm
+VSCodium - wget https://github.com/VSCodium/vscodium/releases/download/1.63.2/codium_1.63.2-1639700424_amd64.deb
+iTunes - wine, probably

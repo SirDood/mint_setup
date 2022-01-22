@@ -1,6 +1,10 @@
+[com/linuxmint/install]
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+installed-apps=['apt:bcmwl-kernel-source', 'apt:flatpak-builder', 'apt:git', 'apt:gnome-software-plugin-flatpak', 'apt:gstreamer1.0-pipewire', 'apt:mint-meta-codecs', 'apt:pavucontrol', 'apt:pipewire', 'apt:pipewire-audio-client-libraries', 'apt:pipewire-media-session', 'apt:sassc', 'apt:xclip', 'fp:flathub:app/com.github.wwmm.easyeffects/x86_64/stable', 'fp:flathub:app/com.discordapp.Discord/x86_64/stable']
+
 [com/linuxmint/updates]
 default-repo-is-ok=true
-refresh-last-run=1642515436
+refresh-last-run=1642844143
 show-welcome-page=false
 window-height=570
 window-pane-position=344
@@ -88,6 +92,7 @@ tile-hud-threshold=25
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
+numlock-state='off'
 repeat-interval=uint32 30
 
 [org/cinnamon/settings-daemon/peripherals/mouse]
@@ -108,6 +113,7 @@ motion-threshold=1
 touchpad-enabled=true
 
 [org/cinnamon/settings-daemon/plugins/power]
+button-power='suspend'
 critical-battery-action='nothing'
 lid-close-ac-action='suspend'
 lid-close-battery-action='suspend'
@@ -143,6 +149,20 @@ dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
 
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'simple-scan.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
 [org/gnome/desktop/calendar]
 show-weekdate=false
 
@@ -157,9 +177,24 @@ disable-microphone=false
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(700, 500, 50, 50)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
 [org/gnome/nm-applet/eap/a6acf7d7-5181-47a5-976e-d83af4a7a8d4]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gnome/software]
+check-timestamp=int64 1642838330
+first-run=false
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -172,7 +207,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(157, 0)
+window-position=(0, 3)
 window-size=(1124, 822)
 
 [org/nemo/desktop]
@@ -207,24 +242,37 @@ selection-menu-open-as-root=false
 selection-menu-scripts=false
 
 [org/nemo/window-state]
-geometry='800x550+310+150'
+geometry='800x550+264+231'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
 [org/x/editor/plugins]
-active-plugins=['time', 'joinlines', 'spell', 'docinfo', 'open-uri-context-menu', 'modelines', 'textsize', 'filebrowser', 'bracketcompletion', 'sort']
+active-plugins=['docinfo', 'sort', 'time', 'spell', 'filebrowser', 'bracketcompletion', 'textsize', 'modelines', 'joinlines', 'open-uri-context-menu']
 
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/izz/Downloads/mint-setup'
+virtual-root='file:///home/izz/Downloads/mint_setup'
+
+[org/x/editor/preferences/editor]
+auto-save=false
+auto-save-interval=uint32 5
+bracket-matching=true
+display-line-numbers=true
+display-right-margin=false
+draw-whitespace=true
+draw-whitespace-leading=false
+draw-whitespace-newline=false
+highlight-current-line=false
+scheme='tango'
 
 [org/x/editor/preferences/ui]
+minimap-visible=false
 statusbar-visible=true
 
 [org/x/editor/state/history-entry]
-history-search-for=['background', 'aspect', 'zoom', 'calendar']
+history-search-for=['pipewire', 'discord', 'background', 'aspect', 'zoom', 'calendar']
 
 [org/x/editor/state/window]
 bottom-panel-size=140

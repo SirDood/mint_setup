@@ -1,26 +1,32 @@
 #!/bin/bash
 
 # This is meant to be retrieved using wget.
-# This is for initial setup. Run with "./init.sh", NO sudo.
+# This is for initial setup. Give executable permissions first then run with "./init.sh", NO sudo.
 
 # Update and upgrade everything first
 sudo apt update && sudo apt upgrade -y
 
-# Install git and xclip
+# Install git
 printf "\nInstalling git...\n"
-apt install git -y
-printf "\nInstalling xclip...\n"
-apt install xclip -y
+sudo apt install git -y
+
+# Installing flatpak and flatpak-builder
+printf "\nInstalling flatpak and flatpak-builder...\n"
+sudo apt install flatpak -y
+sudo apt-get install flatpak-builder -y
+sudo apt install gnome-software-plugin-flatpak -y
+
+# Create directories
+printf "\nCreating temp directory...\n"
+mkdir ~/Downloads/temp
+printf "Creating 'Random Images' directory in ~/Pictures/...\n"
+mkdir ~/Pictures/"Random Images"
 
 # Download repo
-printf "\nCreating temp directory..."
-mkdir ~/Downloads/temp
-cd ~/Downloads/temp
-printf "Cloning mint_setup into temp...\n"
+printf "Cloning mint_setup repo into temp...\n"
+cd ~/Downloads/temp/
 git clone https://github.com/SirDood/mint_setup.git
 
-# Run mint_setup.sh
-printf "\nRunning mint_setup.sh...\n"
+# Setup system settings right away
 chmod +x ~/Downloads/temp/mint_setup/mint_setup.sh
-printf "\n\n"
 ~/Downloads/temp/mint_setup/mint_setup.sh
