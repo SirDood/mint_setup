@@ -3,6 +3,9 @@
 printf "Hi this is just to get sudo permissions without running as sudo lmao\n"
 sudo printf "I now have your home address >:)\n\n"
 
+# Create temp folder
+mkdir ~/Downloads/temp
+
 # Download the WhiteSur theme and Vimix icons
 cd ~/Downloads/temp
 printf "\nGit cloning WhiteSur theme...\n"
