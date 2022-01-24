@@ -34,7 +34,7 @@ sudo dpkg -i ~/Downloads/kxstudio-repos_10.0.3_all.deb
 printf "\nUpdating apt...\n"
 sudo apt update
 printf "\nInstalling Catia...\n"
-sudo apt install catia
+sudo apt install catia -y
 
 printf "\nInstalled PipeWire, pavucontrol and Catia.\n"
 
